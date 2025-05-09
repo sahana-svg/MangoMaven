@@ -3,17 +3,21 @@ import email from "../assets/emailheader.png";
 import address from "../assets/addressheader.png";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import logo from "../assets/logo.png";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import logo from "../assets/logo1.png";
 
 const Header = () => {
   return (
     <header className="bg-white py-4 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <img src={logo} alt="Agrios" className="h-12 mr-2" />
-          {/* <span className="font-bold text-xl">Agrios</span> */}
+          <img src={logo} alt="Agrios" className="h-[100px] " />
+          <span className="font-extrabold text-[20px] bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text">
+            Mango
+            <br />
+            Maven
+          </span>
         </a>
 
         <div className="grid grid-cols-4 gap-4">
@@ -27,9 +31,8 @@ const Header = () => {
             <PinterestIcon />
           </div>
           <div className="bg-[#f4f1d8] rounded-full px-1 py-1">
-            <InstagramIcon  />
+            <InstagramIcon />
           </div>
-          
         </div>
 
         {/* <nav className="hidden md:flex space-x-4" F8F7F0>
@@ -93,7 +96,7 @@ const Header = () => {
             <div className="flex flex-col">
               <span className="text-gray-400">Email</span>
               <span className="font-[800] font-manrope">
-                {" "}
+              
                 info@amruth@gmail.com
               </span>
             </div>
